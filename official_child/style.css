@@ -330,3 +330,19 @@ footer .footer_area .top_section .social_area{
 .clearfix{
     clear: both;
 }
+
+
+.rtl footer .footer_area .top_section .links,
+.rtl footer .footer_area .top_section .social_area
+ {
+    float: right;
+}
+
+.rtl #toTop {
+    left: 32px;
+    right: auto;
+}
+
+.rtl #toTop i {
+    padding: 8px 12px 0 0px
+}
