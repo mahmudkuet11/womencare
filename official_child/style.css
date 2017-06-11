@@ -1,0 +1,332 @@
+/*
+ Theme Name:   Official Child
+ Theme URI:    http://example.com/twenty-fifteen-child/
+ Description:  OfficialChild Theme
+ Author:       Bazlur Rashid
+ Author URI:   http://example.com
+ Template:     official
+ Version:      1.0.0
+ Text Domain:  official-child
+*/
+
+/* Top Header */
+.top_header{
+    width: 100%;
+    background: #00B5CB;
+    position: relative;
+    height: 35px;
+}
+
+.top_header .slogan{
+    position: absolute;
+    left: 250px;
+    font-size: 15px;
+    color: #fff;
+    top: 10px;
+}
+.top_header ul.top_nav{
+    position: absolute;
+    right: 250px;
+    top: 10px;
+    list-style: none;
+}
+.top_header ul.top_nav li{
+    display: inline;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.top_header ul.top_nav li a{
+    color: #fff;
+}
+.top_header ul.top_nav li a:hover{
+    text-decoration: underline !important;
+}
+.top_header ul.top_nav .search_form{
+    display: inherit;
+}
+.top_header ul.top_nav .search_form i.fa{
+    color: #fff;
+    margin-right: 5px;
+}
+.top_header ul.top_nav .search_form input{
+    width: 200px;
+    border: 0;
+    background: transparent;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    font-size: 14px;
+    padding:0 0 3px 10px;
+}
+.top_header ul.top_nav .search_form input::-webkit-input-placeholder{color: #fff;}
+.top_header ul.top_nav .search_form input::-moz-placeholder{color: #fff;}
+.top_header ul.top_nav .search_form input:-ms-input-placeholder{color: #fff;}
+.top_header ul.top_nav .search_form input:-moz-placeholder{color: #fff;}
+.top_header ul.top_nav .search_form input::placeholder{color: #fff;}
+/* End of Top Header */
+
+
+/* Main navbar */
+.main_navbar{
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    background: #00717F;
+    height: 75px;
+}
+.main_navbar .left{
+    position: absolute;
+    top: 0px;
+    left: 250px;
+}
+.main_navbar .left img{
+    width: 150px;
+    display: inline-block;
+    margin-top: 15px;
+}
+.main_navbar .left ul{
+    display: inline-block;
+}
+.main_navbar ul li{
+    display: inline;
+}
+.main_navbar .left ul li a{
+    padding: 0 20px 0 20px;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.main_navbar .left ul li a:hover{
+    color: #00B5CB;
+}
+
+.main_navbar .right{
+    position: absolute;
+    top: 17px;
+    right: 250px;
+    color: #fff;
+    text-align: right;
+    text-transform: uppercase;
+}
+.main_navbar .right .small{
+    font-size: 13px;
+}
+.main_navbar .right .big{
+    font-size: 25px;
+}
+.main_navbar .right .big i.fa{
+    color: #fff;
+    margin-right: 10px;
+}
+
+/* End of main navbar */
+
+.cover_photo{
+    width: 100%;
+    height: 700px;
+    overflow:hidden;
+}
+.cover_photo img{
+    width: 100%;
+    height: 100%;
+}
+
+.about_section{
+    background-image: url(./images/material-design-icon-patterns-2.png);
+    width: 100%;
+    text-align: center;
+    display: block;
+    background-size: cover;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-top: 53px;
+}
+.about_section .content{
+    width: 70%;
+    margin: 0 auto;
+    color: #fff;
+}
+.about_section h1{
+    color: #fff;
+}
+.about_section p{
+    font-size: 17px;
+}
+
+
+.product_with_discount_section{
+    width: 100%;
+}
+
+.featured_products_section{
+    width: 100%;
+}
+.featured_products_section .title{
+    width: 500px;
+    margin:0 auto;
+    text-align: center;
+    margin-top: 65px;
+}
+.title .divider{
+    width: 100px;
+    height: 4px;
+    background: #666;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+.products{
+    width: 1020px;
+    margin:0 auto;
+}
+.products:nth-child(3){
+    margin-right: 0;
+}
+.single_product{
+    width: 30%;
+    float: left;
+    margin-right: 5px;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+
+}
+.single_product img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.single_product .caption{}
+.single_product .caption strong{
+    font-size: 17px;
+    color: #000;
+}
+.single_product .caption span{
+    font-size: 15px;
+}
+
+
+.full_width_image_area{
+    width: 100%;
+}
+.full_width_image_area img{
+    width: 100%;
+    height: 300px;
+}
+
+
+footer{
+    width: 100%;
+    background: #00717f;
+    color: #fff;
+    border-top: 6px solid #00B5CB;
+    padding-bottom: 50px;
+}
+footer .footer_area{
+    width: 980px;
+    margin: 0 auto;
+    padding-top: 45px;
+}
+footer .footer_area .top_section{}
+footer .footer_area .top_section .links{
+    width: 600px;
+    float: left;
+}
+footer .footer_area .top_section .links .column{
+    width: 33%;
+    float: left;
+}
+footer .footer_area .top_section .links .column span{
+    font-size: 18px;
+    color: #00b5cb;
+}
+footer .footer_area .top_section .links .column ul{}
+footer .footer_area .top_section .links .column ul li{
+    display: grid;
+}
+footer .footer_area .top_section .links .column ul li a{
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 0 0 5px;
+}
+footer .footer_area .top_section .links .column ul li a:hover{}
+
+footer .footer_area .top_section .social_area{
+    width: 380px;
+    float: left;
+}
+
+.social_area{}
+.social_area ul{}
+.social_area ul li{
+    display: inline;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.social_area ul li a{}
+.social_area ul li a:hover{}
+.fa-circle.facebook{
+    color: #38589B;
+}
+.fa-circle.twitter{
+    color: #05ABE3;
+}
+.fa-circle.youtube{
+    color: #CC181E;
+}
+.fa-circle.google-plus{
+    color: #CA1D1C;
+}
+.fa-circle.instagram{
+    color: #00A9E9;
+}
+
+
+.copyright{
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.sortable_products{
+    width: 100%;
+}
+.sortable_products .title{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    color: #000;
+    margin-top: 70px;
+}
+.sortable_products .categories{
+    text-align: center;
+    color: #000;
+    margin-bottom: 50px;
+}
+.sortable_products .categories ul li{
+    display: inline;
+}
+.sortable_products .categories ul li a{
+    color: #000;
+    font-size: 17px;
+    padding: 0 10px 0 10px;
+}
+.sortable_products .categories ul li a.active{
+    background: #00717F;
+    color: #fff;
+    padding: 10px;
+}
+.sortable_products .categories ul li a.active:hover{
+    background: #00717F;
+    color: #fff;
+    padding: 10px;
+}
+.sortable_products .categories ul li a:hover{
+    color: #00717F;
+}
+.sortable_products .products{
+    width: 1020px;
+    margin: 0 auto;
+}
+.clearfix{
+    clear: both;
+}
