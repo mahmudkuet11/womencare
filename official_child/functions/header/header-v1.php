@@ -12,7 +12,7 @@
             <?php if (_option('search')): ?>
             <li>
                 <form action="<?php echo home_url(); ?>" class="search_form">
-                    <i class="fa fa-search"></i><input name="s" type="text" placeholder="<?php echo _option('search_field_placeholder'); ?>">
+                    <i class="fa fa-search"></i><input name="s" type="text" placeholder="<?php echo _e('search in tahara','official')  ?>">
                 </form>
             </li>
             <?php endif; ?>

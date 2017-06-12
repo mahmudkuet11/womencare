@@ -6,7 +6,7 @@ get_header();
 
 ?>
 
-
+<?php do_action('wpml_add_language_selector'); ?>
 <div class="cover_photo">
 	<img src="<?php echo _option('cover_photo') ?>">
 </div>

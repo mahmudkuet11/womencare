@@ -17,16 +17,16 @@
     height: 35px;
 }
 
-.top_header .slogan{
+.top_header .slogan {
     position: absolute;
-    left: 250px;
+    left: 150px;
     font-size: 15px;
     color: #fff;
     top: 10px;
 }
 .top_header ul.top_nav{
     position: absolute;
-    right: 250px;
+    right: 150px;
     top: 10px;
     list-style: none;
 }
@@ -76,7 +76,7 @@
 .main_navbar .left{
     position: absolute;
     top: 0px;
-    left: 250px;
+    left: 150px;
 }
 .main_navbar .left img{
     width: 150px;
@@ -345,4 +345,14 @@ footer .footer_area .top_section .social_area{
 
 .rtl #toTop i {
     padding: 8px 12px 0 0px
+}
+
+.rtl .top_header .slogan {
+    left: auto;
+    right: 150px;
+}
+
+.rtl .top_header ul.top_nav {
+    right: 0;
+    left: 150px;
 }
