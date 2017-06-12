@@ -16,8 +16,9 @@
                 </form>
             </li>
             <?php endif; ?>
-            <li><a href="<?php echo _option('help_page_link') ?>"><?php echo _e('Help','official')  ?></a></li>
-            <li><a href="<?php echo wp_login_url(); ?> "><?php echo _e('Login','official')  ?></a></li>
+            <!--<li><a href="<?php /*echo _option('help_page_link') */?>"><?php /*echo _e('Help','official')  */?></a></li>
+            <li><a href="<?php /*echo wp_login_url(); */?> "><?php /*echo _e('Login','official')  */?></a></li>-->
+            <?php do_action('wpml_add_language_selector'); ?>
         </ul>
     </div>
 
