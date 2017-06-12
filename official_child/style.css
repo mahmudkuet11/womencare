@@ -240,7 +240,7 @@
 }
 
 #lang_sel_list  ul {
-    border: 0;
+    border: 0 !important;
 }
 
 #lang_sel_list li {
