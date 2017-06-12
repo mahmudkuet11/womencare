@@ -16,33 +16,9 @@ get_header();
 	</div>
 
 	<div class="products">
+	
+	<?php echo the_content(); ?>
 
-	<?php $query = new WP_Query( array( 'post_type' => 'featured_product', 'post_status'=>'publish', 'order'=>'DESC')); 
-
-		if ( $query->have_posts() ) {
-			while ( $query->have_posts() ) {
-				$query->the_post();
-				global $post;
-				?>
-
-					<div class="single_product">
-						<div class="image">
-							<a href=""><img src="<?php echo get_post_meta( $post->ID, '_cmb_featured_product_image', true ); ?>"></a>
-						</div>
-						<div class="caption">
-							<a href="#"><strong><?php echo get_the_title() ?></strong></a> <br>
-							<span><?php echo get_post_meta( $post->ID, '_cmb_subtitle', true ); ?></span> <br>
-							<!-- <span><?php echo get_post_meta( $post->ID, '_cmb_price', true ); ?></span> -->
-						</div>
-					</div>
-
-
-				<?php
-			}
-			/* Restore original Post Data */
-			wp_reset_postdata();
-		}
-		?>
 
 	</div>
 
