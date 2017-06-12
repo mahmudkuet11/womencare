@@ -16,8 +16,8 @@
                 </form>
             </li>
             <?php endif; ?>
-            <li><a href="<?php echo _option('help_page_link') ?>">Help</a></li>
-            <li><a href="<?php echo wp_login_url(); ?> ">Login</a></li>
+            <li><a href="<?php echo _option('help_page_link') ?>"><?php echo _e('Help','official')  ?></a></li>
+            <li><a href="<?php echo wp_login_url(); ?> "><?php echo _e('Login','official')  ?></a></li>
         </ul>
     </div>
 
@@ -28,7 +28,7 @@
         </div>
 
         <div class="right">
-            <span class="small">24/7 Phone supporr</span><br>
+            <span class="small"><?php echo _e('24/7 Phone support','official')  ?></span><br>
             <span class="big"><i class="fa fa-phone"></i><?php echo _option('phone_no') ?></span>
         </div>
     </div>
