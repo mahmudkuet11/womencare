@@ -115,8 +115,8 @@ function products_list_shortcode( $atts ){
 							<div class="image">
 								<a href="'. get_permalink() .'"><img src="'. get_post_meta( $post->ID, "_cmb_featured_product_image", true ) .'"></a>
 							</div>
-							<div class="caption">
-								<a href="#"><strong>'. get_the_title() .'</strong></a> <br>
+							<div class="caption" style="display:inherit">
+								<a href="'. get_permalink() .'"><strong>'. get_the_title() .'</strong></a> <br>
 								<span>'. get_post_meta( $post->ID, "_cmb_subtitle", true ) .'</span> <br>
 								<!-- <span>'. get_post_meta( $post->ID, "_cmb_price", true ) .'</span> -->
 							</div>
