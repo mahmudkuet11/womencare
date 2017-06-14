@@ -177,17 +177,18 @@
 .products{
     width: 1020px;
     margin:0 auto;
+    text-align: center;
 }
 .products:nth-child(3){
     margin-right: 0;
 }
 .single_product{
     width: 48%;
-    float: left;
     margin-right: 5px;
     text-align: center;
     margin-bottom: 25px;
     margin-top: 25px;
+    display: inline-block;
 
 }
 .single_product img{
@@ -447,5 +448,9 @@ footer .footer_area .top_section .social_area{
 
 .rtl .page-title {
     text-align: right;
+    float: right;
+}
+
+.rtl .wpcf7 textarea {
     float: right;
 }
