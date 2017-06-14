@@ -38,10 +38,10 @@ get_header();
 
 					<div class="single_product">
 						<div class="image">
-							<a href=""><img src="<?php echo get_post_meta( $post->ID, '_cmb_featured_product_image', true ); ?>"></a>
+							<a href="<?php the_permalink(); ?>"><img src="<?php echo get_post_meta( $post->ID, '_cmb_featured_product_image', true ); ?>"></a>
 						</div>
 						<div class="caption">
-							<a href="#"><strong><?php echo get_the_title() ?></strong></a> <br>
+							<a href="<?php the_permalink(); ?>"><strong><?php echo get_the_title() ?></strong></a> <br>
 							<span><?php echo get_post_meta( $post->ID, '_cmb_subtitle', true ); ?></span> <br>
 							<span><?php echo get_post_meta( $post->ID, '_cmb_price', true ); ?></span>
 						</div>

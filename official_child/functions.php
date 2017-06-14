@@ -48,7 +48,7 @@ function create_post_type() {
       'public' => true,
       'has_archive' => true,
       'rewrite' => array('slug' => 'featured-products'),
-      'supports'      => array( 'title' ),
+      'supports'      => array( 'title', 'editor' ),
     )
   );
 }
@@ -98,3 +98,36 @@ function featured_products_meta_boxes( $meta_boxes ) {
 	return $meta_boxes;
 }
 add_filter( 'cmb_meta_boxes', 'featured_products_meta_boxes' );
+
+
+
+function products_list_shortcode( $atts ){
+
+	$res = "";
+	$query = new WP_Query( array( 'post_type' => 'featured_product', 'posts_per_page'=>$atts['posts_per_page'], 'post_status'=>'publish', 'order'=>'DESC')); 
+
+		if ( $query->have_posts() ) {
+			while ( $query->have_posts() ) {
+				$query->the_post();
+				global $post;
+					$res .= '
+						<div class="single_product">
+							<div class="image">
+								<a href="'. get_permalink() .'"><img src="'. get_post_meta( $post->ID, "_cmb_featured_product_image", true ) .'"></a>
+							</div>
+							<div class="caption" style="display:inherit">
+								<a href="'. get_permalink() .'"><strong>'. get_the_title() .'</strong></a> <br>
+								<span>'. get_post_meta( $post->ID, "_cmb_subtitle", true ) .'</span> <br>
+								<!-- <span>'. get_post_meta( $post->ID, "_cmb_price", true ) .'</span> -->
+							</div>
+						</div>
+					';
+			}
+			/* Restore original Post Data */
+			wp_reset_postdata();
+		}
+
+
+		return $res;
+}
+add_shortcode( 'products', 'products_list_shortcode' );
