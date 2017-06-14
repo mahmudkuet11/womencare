@@ -127,7 +127,7 @@
 }
 .cover_photo img{
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .about_section{
@@ -195,7 +195,7 @@
     width: 100%;
     margin-bottom: 10px;
 }
-.single_product .caption{ display: none }
+
 .single_product .caption strong{
     font-size: 17px;
     color: #000;
@@ -210,7 +210,7 @@
 }
 .full_width_image_area img{
     width: 100%;
-    height: 300px;
+    height: auto;
 }
 
 
