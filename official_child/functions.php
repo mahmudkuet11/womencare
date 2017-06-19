@@ -116,9 +116,8 @@ function products_list_shortcode( $atts ){
 								<a href="'. get_permalink() .'"><img src="'. get_post_meta( $post->ID, "_cmb_featured_product_image", true ) .'"></a>
 							</div>
 							<div class="caption" style="display:inherit">
-								<a href="'. get_permalink() .'"><strong>'. get_the_title() .'</strong></a> <br>
-								<span>'. get_post_meta( $post->ID, "_cmb_subtitle", true ) .'</span> <br>
-								<!-- <span>'. get_post_meta( $post->ID, "_cmb_price", true ) .'</span> -->
+								<a href="#"><strong>'. get_the_title() .'</strong></a> <br>
+								<p>'.  wp_trim_words( get_the_content(), $num_words = 55, $more = null ) .'</p>
 							</div>
 						</div>
 					';

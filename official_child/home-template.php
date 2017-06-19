@@ -7,9 +7,10 @@ get_header();
 ?>
 
 
-<div class="cover_photo">
-	<img src="<?php echo _option('cover_photo') ?>">
+<div class="cover_photo" style="background-image:url(<?php echo _option('cover_photo') ?>)">
+
 </div>
+
 
 <div class="about_section">
 	<div class="content">
@@ -28,7 +29,7 @@ get_header();
 
 	<div class="products">
 
-	<?php $query = new WP_Query( array( 'post_type' => 'featured_product', 'posts_per_page' => 6, 'post_status'=>'publish', 'order'=>'DESC')); 
+	<?php $query = new WP_Query( array( 'post_type' => 'featured_product', 'posts_per_page' => 3, 'post_status'=>'publish', 'order'=>'DESC'));
 
 		if ( $query->have_posts() ) {
 			while ( $query->have_posts() ) {
