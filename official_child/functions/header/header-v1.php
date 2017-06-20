@@ -9,13 +9,13 @@
     <div class="top_header">
         <div class="slogan"><?php echo _option('slogan') ?></div>
         <ul class="top_nav">
-            <?php if (_option('search')): ?>
+            <?php /*if (_option('search')): */?><!--
             <li>
-                <form action="<?php echo home_url(); ?>" class="search_form">
-                    <i class="fa fa-search"></i><input name="s" type="text" placeholder="<?php echo _e('search in tahara','official')  ?>">
+                <form action="<?php /*echo home_url(); */?>" class="search_form">
+                    <i class="fa fa-search"></i><input name="s" type="text" placeholder="<?php /*echo _e('search in tahara','official')  */?>">
                 </form>
             </li>
-            <?php endif; ?>
+            --><?php /*endif; */?>
             <!--<li><a href="<?php /*echo _option('help_page_link') */?>"><?php /*echo _e('Help','official')  */?></a></li>
             <li><a href="<?php /*echo wp_login_url(); */?> "><?php /*echo _e('Login','official')  */?></a></li>-->
             <?php do_action('wpml_add_language_selector'); ?>
@@ -29,8 +29,8 @@
         </div>
 
         <div class="right">
-            <span class="small"><?php echo _e('24/7 Phone support','official')  ?></span><br>
-            <span class="big"><i class="fa fa-phone"></i><?php echo _option('phone_no') ?></span>
+           <!-- <span class="small"><?php /*echo _e('24/7 Phone support','official')  */?></span><br>
+            <span class="big"><i class="fa fa-phone"></i><?php /*echo _option('phone_no') */?></span>-->
         </div>
     </div>
 

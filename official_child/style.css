@@ -455,3 +455,44 @@ footer .footer_area .top_section .social_area{
 .rtl .wpcf7 textarea {
     float: right;
 }
+
+
+.page-template-products-template .single_product {
+    width: 100%;
+}
+
+.page-template-products-template .single_product .image,
+.page-template-products-template .single_product .caption {
+    width: 48%;
+}
+
+.page-template-products-template .single_product .image {
+    float: left;
+}
+
+.page-template-products-template .single_product .caption  {
+    float: right;
+}
+
+.page-template-products-template .single_product .caption a {
+   display: block;
+    margin-bottom: 5px;
+    margin-top: 90px;
+}
+
+.page-template-products-template .single_product .caption p {
+    text-align: justify;
+}
+
+.rtl.page-template-products-template .single_product .image {
+    float: right;
+}
+
+.rtl.page-template-products-template .single_product .caption  {
+    float: left;
+}
+
+.rtl.page-template-products-template .single_product .caption p {
+    text-align: justify;
+    direction: rtl;
+}

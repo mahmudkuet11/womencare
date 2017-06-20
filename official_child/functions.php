@@ -116,7 +116,7 @@ function products_list_shortcode( $atts ){
 								<a href="javascript:void(0)"><img src="'. get_post_meta( $post->ID, "_cmb_featured_product_image", true ) .'"></a>
 							</div>
 							<div class="caption" style="display:inherit">
-								<a href="javascript:void(0)"><strong>'. get_the_title() .'</strong></a> <br>
+								<a href="javascript:void(0)"><strong>'. get_the_title() .'</strong></a>
 								<p>'.  wp_trim_words( get_the_content(), $num_words = 55, $more = null ) .'</p>
 							</div>
 						</div>
