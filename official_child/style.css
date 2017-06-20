@@ -497,9 +497,14 @@ footer .footer_area .top_section .social_area{
     direction: rtl;
 }
 
-.burger-menu {
+.burger-menu, .about_section {
     display: none;
 }
+
+.top_header {
+    display: none;
+}
+
 @media only screen and (max-width: 768px) {
 
     .top_header ul.top_nav { right: 48px }
