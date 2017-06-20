@@ -25,6 +25,11 @@
     <div class="main_navbar <?php if (_option('is_sticky')) {echo 'my_sticky'; }?>">
         <div class="left">
             <a href="<?php echo home_url(); ?>"><img src="<?php echo _option('logo');?>" alt="<?php bloginfo('name'); ?>" /></a>
+            <div class="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <?php wp_nav_menu( array( 'theme_location' => 'main-menu-of-home', 'container' => false, 'depth'=>1 ) ); ?>
         </div>
 

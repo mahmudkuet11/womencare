@@ -10,6 +10,16 @@ function official_cuild_theme_enqueue_styles() {
         array( $parent_style ),
         wp_get_theme()->get('Version')
     );
+
+
+
+    wp_register_script('official-child-custom', get_bloginfo( 'stylesheet_directory' ) . '/js/official-child-custom.js','jquery','3.1.5');
+
+
+    // Enqueue Scripts ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    wp_enqueue_script('official-child-custom');
+
+
 }
 add_action( 'wp_enqueue_scripts', 'official_cuild_theme_enqueue_styles' );
 
