@@ -122,7 +122,7 @@
 
 .cover_photo{
     width: 100%;
-    height: 320px;
+    height: 520px;
     overflow:hidden;
     background-repeat: no-repeat;
 }
@@ -257,17 +257,18 @@ footer{
     background: #00717f;
     color: #fff;
     border-top: 6px solid #00B5CB;
-    padding-bottom: 50px;
+    padding-bottom: 25px;
 }
 footer .footer_area{
     width: 980px;
     margin: 0 auto;
-    padding-top: 45px;
+    padding-top: 15px;
 }
 footer .footer_area .top_section{}
 footer .footer_area .top_section .links{
     width: 600px;
     float: left;
+    display: none;
 }
 footer .footer_area .top_section .links .column{
     width: 33%;
@@ -290,7 +291,7 @@ footer .footer_area .top_section .links .column ul li a:hover{}
 
 footer .footer_area .top_section .social_area{
     width: 380px;
-    float: left;
+    margin: 0 auto;
 }
 
 .social_area{}
@@ -381,12 +382,6 @@ footer .footer_area .top_section .social_area{
 
 .top_nav li {
     float: left;
-}
-
-.rtl footer .footer_area .top_section .links,
-.rtl footer .footer_area .top_section .social_area
- {
-    float: right;
 }
 
 .rtl #toTop {
