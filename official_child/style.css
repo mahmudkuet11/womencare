@@ -188,12 +188,13 @@
     margin-right: 0;
 }
 .single_product{
-    width: 30%;
+    width: 32%;
     margin-right: 5px;
     text-align: center;
     margin-bottom: 25px;
     margin-top: 0px;
     display: inline-block;
+    float: left;
 
 }
 .single_product img{
@@ -291,7 +292,7 @@ footer .footer_area .top_section .links .column ul li a{
 footer .footer_area .top_section .links .column ul li a:hover{}
 
 footer .footer_area .top_section .social_area{
-    width: 380px;
+    width: 140px;
     margin: 0 auto;
     float: none !important;
 }

@@ -32,7 +32,7 @@
 	 			<div class="social_area">
 	 				<ul>
 	 					<li>
-	 						<a href="<?php echo _option('facebook_link') ?>">
+	 						<a  target="_blank" href="<?php echo _option('facebook_link') ?>">
 	 							<span class="fa-stack fa-lg">
 								  <i class="fa fa-circle fa-stack-2x facebook"></i>
 								  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
@@ -40,15 +40,15 @@
 	 						</a>
 	 					</li>
 	 					<li>
-	 						<a href="<?php echo _option('twitter_link') ?>">
+	 						<a  target="_blank" href="<?php echo _option('twitter_link') ?>">
 	 							<span class="fa-stack fa-lg">
 								  <i class="fa fa-circle fa-stack-2x twitter"></i>
 								  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
 								</span>
 	 						</a>
 	 					</li>
-	 					<li>
-	 						<a href="<?php echo _option('youtube_link') ?>">
+	 					<!--<li>
+	 						<a href="<?php /*echo _option('youtube_link') */?>">
 	 							<span class="fa-stack fa-lg">
 								  <i class="fa fa-circle fa-stack-2x youtube"></i>
 								  <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
@@ -56,15 +56,15 @@
 	 						</a>
 	 					</li>
 	 					<li>
-	 						<a href="<?php echo _option('google_plus_link') ?>">
+	 						<a href="<?php /*echo _option('google_plus_link') */?>">
 	 							<span class="fa-stack fa-lg">
 								  <i class="fa fa-circle fa-stack-2x google-plus"></i>
 								  <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
 								</span>
 	 						</a>
-	 					</li>
+	 					</li>-->
 	 					<li>
-	 						<a href="<?php echo _option('instagram_link') ?>">
+	 						<a target="_blank" href="<?php echo _option('instagram_link') ?>">
 	 							<span class="fa-stack fa-lg">
 								  <i class="fa fa-circle fa-stack-2x instagram"></i>
 								  <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
