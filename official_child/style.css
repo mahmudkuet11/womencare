@@ -122,9 +122,10 @@
 
 .cover_photo{
     width: 100%;
-    height: 520px;
+    height: 345px;
     overflow:hidden;
     background-repeat: no-repeat;
+    background-size: 100% auto;
 }
 .cover_photo img{
     width: 100%;
@@ -292,6 +293,7 @@ footer .footer_area .top_section .links .column ul li a:hover{}
 footer .footer_area .top_section .social_area{
     width: 380px;
     margin: 0 auto;
+    float: none !important;
 }
 
 .social_area{}
