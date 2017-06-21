@@ -79,9 +79,9 @@
     left: 150px;
 }
 .main_navbar .left img{
-    width: 150px;
+    width: 185px;
     display: inline-block;
-    margin-top: 15px;
+    margin-top: 4px;
 }
 .main_navbar .left ul{
     display: inline-block;
@@ -131,6 +131,9 @@
     height: auto;
 }
 
+.featured_products_section .title {
+    display: none;
+}
 .about_section{
     background-image: url(./images/material-design-icon-patterns-2.png);
     width: 100%;
@@ -177,14 +180,14 @@
 }
 .products{
     width: 1020px;
-    margin: -35px auto 0 auto;
+    margin: 0px auto 0 auto;
     text-align: center;
 }
 .products:nth-child(3){
     margin-right: 0;
 }
 .single_product{
-    width: 48%;
+    width: 30%;
     margin-right: 5px;
     text-align: center;
     margin-bottom: 25px;
@@ -198,7 +201,7 @@
 }
 
 .single_product .caption strong{
-    font-size: 17px;
+    font-size: 16px;
     color: #000;
 }
 .single_product .caption span{
@@ -456,7 +459,9 @@ footer .footer_area .top_section .social_area{
     float: right;
 }
 
-
+.single_product .caption p {
+    font-size: 15px;
+}
 .page-template-products-template .single_product {
     width: 100%;
 }
