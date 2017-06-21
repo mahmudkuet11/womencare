@@ -90,11 +90,7 @@
 		<div id="toTop"><i class="icon-angle-up"></i></div><!-- Back to top -->
 	<?php endif; ?>
     
-
-
-
 <?php wp_footer(); ?>
-
 
 </body>
 </html>

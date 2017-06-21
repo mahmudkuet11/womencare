@@ -11,13 +11,13 @@ function official_cuild_theme_enqueue_styles() {
         wp_get_theme()->get('Version')
     );
 
-
-
-    wp_register_script('official-child-custom', get_bloginfo( 'stylesheet_directory' ) . '/js/official-child-custom.js','jquery','3.1.5');
+	wp_register_script('jssor-slider-script', get_bloginfo( 'stylesheet_directory' ) . '/js/jssor.slider-24.1.5.min.js','jquery','3.1.5');
+    wp_register_script('official-child-custom', get_bloginfo( 'stylesheet_directory' ) . '/js/official-child-custom.js',array('jquery', 'jssor-slider-script'),'3.1.5');
 
 
     // Enqueue Scripts ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     wp_enqueue_script('official-child-custom');
+    wp_enqueue_script('jssor-slider-script');
 
 
 }
@@ -58,6 +58,19 @@ function create_post_type() {
       'public' => true,
       'has_archive' => true,
       'rewrite' => array('slug' => 'featured-products'),
+      'supports'      => array( 'title', 'editor' ),
+    )
+  );
+
+  register_post_type( 'product_slider',
+    array(
+      'labels' => array(
+        'name' => __( 'Product Sliders' ),
+        'singular_name' => __( 'Product Slider' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+      'rewrite' => array('slug' => 'product-slider'),
       'supports'      => array( 'title', 'editor' ),
     )
   );
@@ -108,6 +121,30 @@ function featured_products_meta_boxes( $meta_boxes ) {
 	return $meta_boxes;
 }
 add_filter( 'cmb_meta_boxes', 'featured_products_meta_boxes' );
+
+function product_slider_meta_boxes( $meta_boxes ) {
+	$prefix = '_cmb_'; // Prefix for all fields
+	$meta_boxes['product_slider_meta_boxe'] = array(
+		'id' => 'product_slider_meta_boxe',
+		'title' => 'Product SLider Meta Box',
+		'pages' => array('product_slider'), // post type
+		'context' => 'normal',
+		'priority' => 'high',
+		'show_names' => true, // Show field names on the left
+		'fields' => array(
+			array(
+			    'name' => 'Product Image',
+			    'desc' => 'Upload an image. Best size: 290 X 215',
+			    'id' => $prefix . 'product_slider_image',
+			    'type' => 'file',
+			    'allow' => array( 'url', 'attachment' ) // limit to just attachments with array( 'attachment' )
+			)
+		),
+	);
+
+	return $meta_boxes;
+}
+add_filter( 'cmb_meta_boxes', 'product_slider_meta_boxes' );
 
 
 
