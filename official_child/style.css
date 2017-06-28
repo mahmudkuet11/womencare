@@ -655,6 +655,18 @@ footer .footer_area .top_section .social_area{
         padding-bottom: 12px;
 
     }
+
+    .page-template-products-template .single_product .image, .page-template-products-template .single_product .caption {
+        width: 100%;
+    }
+
+    .page-template-products-template .single_product .caption {
+        margin-bottom: 10px;
+    }
+
+    .page-template-products-template .single_product .caption a  {
+        margin-top: 0;
+    }
 }
 
 @media only screen and (max-width: 640px) {
@@ -662,6 +674,7 @@ footer .footer_area .top_section .social_area{
         height: 180px;
     }
 
+   
 }
 @media only screen and (max-width: 480px) {
     .cover_photo {
