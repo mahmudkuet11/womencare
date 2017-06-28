@@ -568,7 +568,9 @@ footer .footer_area .top_section .social_area{
         .jssora03r.jssora03rds { background-position: -63px -33px; opacity: .3; pointer-events: none; }
 
 @media only screen and (max-width: 768px) {
-
+    .rtl div.wpcf7-response-output  {
+        float: right;
+    }
     .top_header ul.top_nav { right: 48px }
     .main_navbar .left a { text-shadow: 2px 2px 8px #000; }
 
@@ -672,9 +674,7 @@ footer .footer_area .top_section .social_area{
         height: 200px;
     }
 
-    .rtl div.wpcf7-response-output  {
-        float: right;
-    }
+
 }
 
 @media only screen and (max-width: 640px) {
