@@ -631,12 +631,37 @@ footer .footer_area .top_section .social_area{
         width: 90%;
         margin: 0 auto;
     }
+
+    .single_product {
+        width: 100%;
+    }
+
+    .rtl .main_navbar .left {
+        right: 0;
+    }
+
+    .rtl .main_navbar .left img {
+        margin-right: 20px;
+    }
+
+    .rtl .main_navbar ul {
+        margin-right: 0;
+    }
+
+    .main_navbar ul li {
+         background-color:rgba(0,113,127, 1.0);
+        margin-top: 0;
+        padding-top: 12px;
+        padding-bottom: 12px;
+
+    }
 }
 
 @media only screen and (max-width: 640px) {
     .cover_photo {
         height: 180px;
     }
+
 }
 @media only screen and (max-width: 480px) {
     .cover_photo {
