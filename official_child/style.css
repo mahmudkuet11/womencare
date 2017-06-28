@@ -667,6 +667,10 @@ footer .footer_area .top_section .social_area{
     .page-template-products-template .single_product .caption a  {
         margin-top: 0;
     }
+
+    .cover_photo {
+        height: 200px;
+    }
 }
 
 @media only screen and (max-width: 640px) {
@@ -674,7 +678,7 @@ footer .footer_area .top_section .social_area{
         height: 180px;
     }
 
-   
+
 }
 @media only screen and (max-width: 480px) {
     .cover_photo {
